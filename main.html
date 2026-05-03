@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h2>CRUD</h2>
+      <p>product management system</p>
+
+      <input id="titleInput" placeholder="title" type="text" />
+      <br />
+      <input
+        onkeyup="gettotal()"
+        type="number"
+        id="price"
+        placeholder="price"
+      />
+      <input
+        onkeyup="gettotal()"
+        type="number"
+        id="taxes"
+        placeholder="taxes"
+      />
+      <input onkeyup="gettotal()" type="number" id="ads" placeholder="ads" />
+      <input
+        onkeyup="gettotal()"
+        type="number"
+        id="discount"
+        placeholder="discount"
+      />
+      <input type="number" id="count" placeholder="count" />
+      <button id="total">total</button>
+
+      <input id="category" placeholder="category" type="text" />
+      <input
+        onkeyup="searchData(this.value)"
+        id="ser"
+        placeholder="search"
+        type="text"
+      /><br />
+
+      <div id="out">
+        <div id="search">
+          <button onclick="getsearchmood(this.id)" id="searchCat">
+            search by category
+          </button>
+          <button onclick="getsearchmood(this.id)" id="searchTitle">
+            search by title
+          </button>
+        </div>
+        <button id="submit">submit</button>
+      </div>
+      <div id="delall"></div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

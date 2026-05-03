@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.404);
+  color: black;
+}
+/* body {
+  background-color: black;
+  color: darkgrey;
+  font-family: system-ui;
+} */
+#main {
+  width: 80%;
+  margin: auto;
+}
+input {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.863);
+  border-radius: 6px;
+  padding: 6px;
+  margin: 5px;
+  border: none;
+}
+#title {
+  width: 100%;
+}
+#create {
+  width: 60%;
+}
+input:focus {
+  background-color: rgba(0, 0, 0, 0.315);
+  color: black;
+}
+
+#total ::before {
+  content: "total ->";
+}
+#category {
+  width: 70%;
+}
+#count {
+  width: 65%;
+}
+#ser {
+  width: 70%;
+  text-align: center;
+}
+
+button {
+  background-color: indigo;
+  border-radius: 5px;
+  height: 35px;
+  transition: 0.3;
+}
+button:hover {
+  background-color: rgb(120, 2, 204);
+  letter-spacing: 1px;
+}
+#search button {
+  width: 30%;
+}
+#search {
+  display: flex;
+  justify-content: space-between;
+}
+table {
+  width: 100%;
+  text-align: center;
+}
+table th {
+  text-transform: uppercase;
+  padding: 5px;
+}
+#submit {
+  background-color: green;
+  width: 10%;
+  height: 35px;
+}
+/* #delall {
+  background-color: #a00d02;
+  border-radius: 5px;
+  height: 35px; */
+/* } */
